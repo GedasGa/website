@@ -43,6 +43,15 @@ body.product-partner {
       text-align: right;
       margin: 8px 0 150px;
       max-width: 100%;
+      @media screen and (max-width: $break-xs) {
+        margin: 8px 0 20%;
+      }
+    }
+    p.last {
+      margin-bottom: 250px;
+      @media screen and (max-width: $break-xs) {
+        margin-bottom: 20%;
+      }
     }
 
     .productsPartner-header {
@@ -123,7 +132,16 @@ body.product-partner {
         width: 570px;
       }
       @media screen and (max-width: $break) {
-        width: 100%;
+        width: 520px;
+      }
+      @media screen and (max-width: $break) and (min-width: 413px){
+        width: 380px;
+      }
+      @media screen and (max-width: 412px) {
+        width: 350px;
+      }
+      @media screen and (max-width: 320px) {
+        width: 290px;
       }
       li {
         width: 200px;
@@ -142,6 +160,20 @@ body.product-partner {
           }
         }
         @media screen and (max-width: $break) {
+          margin: 0 100px 50px 0;
+          width: 210px;
+        }
+        @media screen and (max-width: $break) and (min-width: 413px){
+          margin: 0 50px 50px 0;
+          width: 160px;
+        }
+        @media screen and (max-width: 412px) {
+          margin: 0 35px 50px 0;
+          width: 150px;
+        }
+        @media screen and (max-width: 320px) {
+          margin: 0 30px 50px 0;
+          width: 130px;
         }
 
         &:last-child {
@@ -159,6 +191,15 @@ body.product-partner {
             -ms-transition: .4s ease-in-out;
            .cate-img {
              background-position: 0 -200px;
+             @media screen and (max-width: $break) and (min-width: 413px){
+              background-position: 0 -160px;
+             }
+             @media screen and (max-width: 412px) {
+              background-position: 0 -150px;
+             }
+             @media screen and (max-width: 320px) {
+              background-position: 0 -130px;
+             }
            }
 
            p {
@@ -179,6 +220,15 @@ body.product-partner {
             -webkit-transition: .4s ease-in-out;
             -moz-transition: .4s ease-in-out;
             -ms-transition: .4s ease-in-out;
+            @media screen and (max-width: $break) and (min-width: 413px){
+              font-size: 15px;
+            }
+            @media screen and (max-width: 412px) {
+              font-size: 15px;
+            }
+            @media screen and (max-width: 320px) {
+              font-size: 12px;
+            }
          }
        }
 
@@ -188,6 +238,21 @@ body.product-partner {
          margin: 0 auto 20px;
          background-position: 0 0;
          background-repeat: no-repeat;
+         @media screen and (max-width: $break) and (min-width: 413px){
+          background-size: 160px;
+            width: 160px;
+            height: 160px;
+          }
+         @media screen and (max-width: 412px) {
+            background-size: 150px;
+            width: 150px;
+            height: 150px;
+          }
+          @media screen and (max-width: 320px) {
+            background-size: 130px;
+            width: 130px;
+            height: 130px;
+          }
 
          &:hover {
           background-position: 0 -200px;
@@ -230,11 +295,17 @@ body.product-partner {
         layout: fixed;
         border-top: 2px solid #0092bf;
         border-bottom: 1px solid #dbdbdb;
+        @media screen and (max-width: $break-xs) {
+          border-bottom: none;
+        }
 
         th,td {
           border-bottom: 1px solid #dbdbdb;
           vertical-align: middle;
           padding: 60px 40px 0 40px;
+          @media screen and (max-width: $break-lg) {
+            padding: 60px 20px 0 20px;
+          }
         }
 
         .products-name {
@@ -242,9 +313,28 @@ body.product-partner {
           padding: 0 50px;
           background-color: #fafafa;
           text-align: center;
+          @media screen and (max-width: $break-lg) {
+            padding: 0 15px;
+          }
+          @media screen and (max-width: $break-xs) {
+            padding: 0 20px 20px;
+            width: 100%;
+            display: block;
+            border-top: 1px solid #dbdbdb;
+          }
 
           img {
             margin-bottom: 15px;
+            @media screen and (max-width: $break-xs) {
+              margin: 0 auto;
+              display: block;
+            }
+          }
+          .logo-position {
+            margin: -30px 0 0;
+            @media screen and (max-width: $break-xs) {
+              margin: 0 auto;
+            }
           }
 
           a {
@@ -267,6 +357,10 @@ body.product-partner {
               padding: 0 12px;
               text-decoration: none;
               transition: all 0.1s linear 0s;
+              @media screen and (max-width: $break-xs) {
+                padding: 0 40px;
+                margin-bottom: 5%;
+              }
               &:hover {
                 opacity: 0.8;
               }
@@ -276,10 +370,34 @@ body.product-partner {
         .outline {
           width: 600px;
           padding-right: 0;
+          @media screen and (max-width: $break-lg) {
+            width: 550px;
+          }
+          @media screen and (max-width: $break) {
+            padding-left: 30px;
+            width: 480px;
+          }
+          @media screen and (max-width: $break-xs) {
+            width: 100%;
+            display: block;
+          }
+          .break {
+            display: none;
+            @media screen and (max-width: $break-lg) {
+              display: block;
+            }
+          }
 
           .outline-contents {
             border-right: 1px solid #dbdbdb;
             padding-right: 35px;
+            @media screen and (max-width: $break) {
+              padding-right: 25px;
+            }
+            @media screen and (max-width: $break-xs) {
+              padding-right: 25px;
+              border-right: none;
+            }
 
             h4 {
               color: #444;
@@ -302,6 +420,18 @@ body.product-partner {
         .info {
           width: 320px;
           padding: 30px 20px;
+          @media screen and (max-width: $break) {
+            width: 300px;
+          }
+          @media screen and (max-width: $break-xs) {
+            width: 100%;
+            display: block;
+          }
+          @media screen and (max-width: $break-xs) {
+              padding: 30px 25px;
+              margin: 0 0 14%;
+              border-bottom: 1px solid #dbdbdb;
+            }
 
           ul li:last-child {
             margin-bottom: 0;
