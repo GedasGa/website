@@ -37,6 +37,10 @@
     }
 }
 
+article.main {
+    height: auto;
+}
+
 article.main > div#modal-overlay {
     z-index: 100;
 }
@@ -353,6 +357,10 @@ article.main section {
     border-bottom: none;
 }
 
+article.main {
+    position: relative;
+}
+
 article.cases {
     display: none;
     font-size: 13px;
@@ -365,6 +373,13 @@ article.cases {
     margin-bottom: 60px;
     z-index: 101;
     overflow-y: scroll;
+    height: 450px;
+    opacity: 1;
+    margin-left: -351px;
+    margin-top: -325px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
     &:after {
         content: ".";

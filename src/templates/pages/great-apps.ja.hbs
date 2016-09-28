@@ -14,6 +14,17 @@ $(function(){
     }
 });
 </script>
+<script>
+var WindowHeightModal = $(window).height();
+$(function(){
+    if(WindowHeight < 800){
+        $('.cases').css('margin-top',"0px");
+        $('.cases').css('top',"24px");
+    } else {
+        $('.main').css('height',WindowHeightModal+"px");
+    }
+});
+</script>
     <div class="case-featured">
         <div>
             <h1>Monaca <i>x</i> Onsen UI Showcase</h1>
@@ -38,8 +49,7 @@ $(function(){
     </div>
 </section>
 
-<article class="cases" id="app-detail-container"
-         style="opacity: 1; margin-left: -351px; position: fixed; top: 24.5px; left: 50%;">
+<article class="cases" id="app-detail-container">
     <header>
         <img src="" alt="" class="headicon app-icon" width="60" height="60">
         <h2 class="app-title"></h2>
