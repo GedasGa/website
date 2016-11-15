@@ -7,9 +7,9 @@ description: アプリ事例 - クラウド上のアプリ開発環境。iOS/And
 <script>
 var WindowHeight = $(window).height();
 $(function(){
-    if(WindowHeight < 450){
-        $('#app-detail-container').css('min-height','450px');
-    } else {
+    if(WindowHeight < 670){
+        $('#app-detail-container').css('height','450px');
+    } else if(WindowHeight > 670) {
         $('#app-detail-container').css('height','auto');
     }
 });
