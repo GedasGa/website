@@ -82,8 +82,9 @@ body.academic {
             position: relative;
           }
           @media screen and (max-width: $break) {
-            padding: 4% 5% 0;
-            width: 100%;
+            padding: 4% 0 0;
+            margin: 0 5%;
+            width: 90%;
           }
           @media screen and (max-width: $break-xs) {
             padding: 4% 5% 0;
