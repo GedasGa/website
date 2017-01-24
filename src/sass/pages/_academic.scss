@@ -79,15 +79,11 @@ body.academic {
             margin: 0 auto;
             width: 760px;
             box-sizing: border-box;
+            position: relative;
           }
           @media screen and (max-width: $break) {
             padding: 4% 5% 0;
             width: 100%;
-          }
-          @media screen and (max-width: $break-lg) {
-            padding: 20px 0 0;
-            margin: 0 auto;
-            width: 930px;
           }
           @media screen and (max-width: $break-xs) {
             padding: 4% 5% 0;
@@ -107,7 +103,7 @@ body.academic {
               font-size: 30px;
             }
             @media screen and (max-width: $break-lg) {
-              margin: 0 0 10px 68px;
+              margin: 0 0 10px 0;
               text-align: left;
               font-size: 40px;
               line-height: 1.2;
@@ -136,7 +132,7 @@ body.academic {
               margin-bottom: 8%;
             }
             @media screen and (max-width: $break-lg) {
-              margin: 0 0 0 68px;
+              margin: 0;
               text-align: left;
               font-size: 16px;
               line-height: 1.5;
@@ -152,17 +148,18 @@ body.academic {
           margin: -100px 0 0 350px;
           width: 470px;
           @media screen and (max-width: $break-xl) {
-            margin: -140px 0 30px 0;
+            margin: -170px 0 40px;
             float: right;
+            width: 420px;
+          }
+          @media screen and (max-width: $break-lg) {
+            margin: -90px 0 30px;
+            width: 370px;
           }
           @media screen and (max-width: $break) {
-            float: none;
             margin: 0 auto 5%;
             width: 300px;
             display: block;
-          }
-          @media screen and (max-width: $break-lg) {
-            width: 370px;
           }
           @media screen and (max-width: $break-xs) {
             width: 300px;
@@ -175,17 +172,17 @@ body.academic {
           left: 50%;
           margin-left: -405px;
           @media screen and (max-width: $break-xl) {
-            margin-left: -378px;
-            top: 310px;
+            margin: 0;
+            top: 250px;
+            left: 0;
+            position: absolute;
+          }
+          @media screen and (max-width: $break-lg) {
+            top: 230px;
+            position: absolute;
           }
           @media screen and (max-width: $break) {
             margin: 0 0 10%;
-            position: static;
-          }
-          @media screen and (max-width: $break-lg) {
-            margin-left: -310px;
-            top: 230px;
-            left: 50%;
             position: absolute;
           }
           @media screen and (max-width: $break-xs) {
@@ -196,6 +193,9 @@ body.academic {
           }
           a {
             background-color: #468fff;
+            @media screen and (max-width: $break-xl) {
+              margin: 0;
+            }
             @media screen and (max-width: $break) {
               font-size: 20px;
             }
