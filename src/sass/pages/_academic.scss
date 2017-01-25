@@ -14,25 +14,24 @@ body.academic {
         display: none;
       }
     }
-    @media screen and (max-width: $break) {
-      .sp-br {
-        display: none;
-      }
-    }
     @media screen and (max-width: $break-lg) {
       .sp-br {
         display: block;
       }
     }
-    @media screen and (max-width: $break-xs) {
+    @media screen and (max-width: $break) {
       .sp-br {
+        display: none;
+      }
+    }
+    @media screen and (max-width: $break-xs) {
+      .xs-br {
         display: none;
       }
     }
     header {
       background-color: #222;
       border-bottom: 1px solid #080808;
-      height: 50px;
       position: relative;
       z-index: 100;
       .navbar {
@@ -81,6 +80,9 @@ body.academic {
             box-sizing: border-box;
             position: relative;
           }
+          @media screen and (max-width: $break-lg) {
+            width: 90%;
+          }
           @media screen and (max-width: $break) {
             padding: 4% 0 0;
             margin: 0 5%;
@@ -88,7 +90,8 @@ body.academic {
           }
           @media screen and (max-width: $break-xs) {
             padding: 4% 5% 0;
-            width: 100%;
+            width: 90%;
+            box-sizing: border-box;
           }
 
           h1 {
@@ -105,9 +108,9 @@ body.academic {
               font-size: 40px;
               line-height: 1.2;
             }
-            @media screen and (max-width: $break) {
-              margin: 0 0 4%;
-              font-size: 30px;
+            @media screen and (max-width: $break-xs) {
+              width: 100%;
+              font-size: 32px;
             }
         }
           p {
@@ -139,6 +142,7 @@ body.academic {
               padding: 0;
               margin: 0 0 5%;
               font-size: 13px;
+              width: 100%;
             }
         }
         .key-image {
@@ -160,6 +164,7 @@ body.academic {
           }
           @media screen and (max-width: $break-xs) {
             width: 300px;
+            float: none;
           }
         }
         .box-try {
@@ -183,9 +188,7 @@ body.academic {
             position: absolute;
           }
           @media screen and (max-width: $break-xs) {
-            margin-left: -378px;
-            top: 310px;
-            margin: 0 0 10%;
+            margin: 0 auto 10%;
             position: static;
           }
           a {
@@ -195,6 +198,9 @@ body.academic {
             }
             @media screen and (max-width: $break) {
               font-size: 20px;
+            }
+            @media screen and (max-width: $break) {
+              width: 100%;
             }
           }
           .btn-blue:hover {
@@ -329,6 +335,7 @@ body.academic {
             margin: 0 auto;
             width: 100%;
             max-width: 960px;
+            box-sizing: border-box;
           }
         }
         .features li {
@@ -466,6 +473,9 @@ body.academic {
               }
               .comfirm {
                 margin: 0 auto 0 8%;
+                @media screen and (max-width: $break) {
+                  margin: 0 auto 0 7%;
+                }
               }
             }
             @media screen and (max-width: $break) {
