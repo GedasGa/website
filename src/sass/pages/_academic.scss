@@ -71,7 +71,7 @@ body.academic {
           height: auto;
          }
         .academic-inner {
-          padding: 20px 0 30px;
+          padding: 40px 0 30px;
           margin: 0 auto;
           width: 930px;
           @media screen and (max-width: $break-xl) {
@@ -99,17 +99,13 @@ body.academic {
             @media screen and (max-width: $break-xl) {
               margin: 0 0 2%;
             }
-            @media screen and (max-width: $break) {
-              margin: 0 0 4%;
-              font-size: 30px;
-            }
             @media screen and (max-width: $break-lg) {
               margin: 0 0 10px 0;
               text-align: left;
               font-size: 40px;
               line-height: 1.2;
             }
-            @media screen and (max-width: $break-xs) {
+            @media screen and (max-width: $break) {
               margin: 0 0 4%;
               font-size: 30px;
             }
