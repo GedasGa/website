@@ -247,6 +247,7 @@ header.navbar {
                 padding-left: 30px;
                 &:hover {
                     background-color: rgba(0, 0, 0, 0.5);
+                    transition: 0.6s;
                 }
             }
             li a.nav-title {
