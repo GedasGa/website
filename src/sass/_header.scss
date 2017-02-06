@@ -59,6 +59,7 @@ header.navbar {
             }
             img:hover {
               opacity: 0.7;
+              transition: 0.6s;
             }
         }
         .navbar-toggle {
@@ -163,6 +164,7 @@ header.navbar {
             -webkit-font-smoothing: antialiased;
             &:hover {
                 color: #7cdaff;
+                transition: 0.6s;
             }
             &.login {
                 color: #7cdaff;
@@ -225,6 +227,11 @@ header.navbar {
         }
     }
     .dropdown-menu {
+        li a {
+                &:hover {
+                    transition: 0.6s;
+                }
+            }
         @extend .dropdown-menu-dark;
         border-top: none;
         margin-top: -1px;
