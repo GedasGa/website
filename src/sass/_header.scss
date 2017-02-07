@@ -271,7 +271,8 @@ header.navbar {
     }
     //bootstrap init
     ul.nav li.dropdown:hover > ul.dropdown-menu {
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
     .glyphicon-new-window {
         top: 4px;
