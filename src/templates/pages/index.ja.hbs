@@ -133,7 +133,6 @@ layout: src/templates/layouts/index.hbs
         </li>
     </ul>
 </div>
-
 <div class="container section features box-full">
     <h2>Monacaの5つの特徴</h2>
     <ol>
@@ -141,7 +140,7 @@ layout: src/templates/layouts/index.hbs
             <h3>1.すぐに使えるHTML5ハイブリッドアプリ専用開発環境</h3>
 
             <p>Monacaを使うと、Web制作者・開発者が、既存のスキルセットですぐにiOSやAndroidに対応したモバイルアプリ開発を始められます。</p>
-            <img id="features-img-1" alt="" />
+            <span class="feed-img"><img id="features-img-1" alt="" /></span>
         </li>
         <li>
             <h3>2.選べる開発スタイル／コーディング環境</h3>
@@ -232,7 +231,6 @@ layout: src/templates/layouts/index.hbs
     <a href="/register/start.html" class="btn btn-green">今すぐ試す<span class='small'>(無料)</span></a>
 </div>
 
-
 <script>
 var slider;
 
@@ -253,4 +251,17 @@ window.addEventListener("load", function() {
         slider.start();
     });
 })
+</script>
+
+<script>
+$(function() {
+    $('.feed-img').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if(isInView){
+            $(this).stop().addClass('feedin');
+        }
+        else{
+            $(this).stop().removeClass('feedin');
+        }
+    });
+});
 </script>
