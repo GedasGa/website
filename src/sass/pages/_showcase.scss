@@ -962,6 +962,12 @@ body.showcase.tvasahi {
             background: -webkit-linear-gradient(top, #136dac 0%,#0e578a 100%);
             background: linear-gradient(to bottom, #136dac 0%,#0e578a 100%);
         }
+        ul {
+        margin-right: 360px;
+        @media screen and (max-width: 1070px) {
+          margin-right: 0;
+        }
+      }
     }
     article.main figure figcaption {
         margin-bottom: 40px;
@@ -1876,6 +1882,12 @@ body.showcase.proroutemarumitsu {
             background: -webkit-linear-gradient(top, #136dac 0%,#0e578a 100%);
             background: linear-gradient(to bottom, #136dac 0%,#0e578a 100%);
         }
+        ul {
+        margin-right: 360px;
+        @media screen and (max-width: 1070px) {
+          margin-right: 0;
+        }
+      }
     }
     article.main figure figcaption {
         margin-bottom: 40px;
@@ -2309,6 +2321,12 @@ body.showcase.kdl {
             background: -webkit-linear-gradient(top, #136dac 0%,#0e578a 100%);
             background: linear-gradient(to bottom, #136dac 0%,#0e578a 100%);
         }
+        ul {
+        margin-right: 360px;
+        @media screen and (max-width: 1070px) {
+          margin-right: 0;
+        }
+      }
     }
     article.main figure figcaption {
         margin-bottom: 40px;
@@ -2480,6 +2498,12 @@ body.showcase.netmarketing {
             background: -webkit-linear-gradient(top, #136dac 0%,#0e578a 100%);
             background: linear-gradient(to bottom, #136dac 0%,#0e578a 100%);
         }
+        ul {
+        margin-right: 360px;
+        @media screen and (max-width: 1070px) {
+          margin-right: 0;
+        }
+      }
     }
     article.main figure figcaption {
         margin-bottom: 40px;
@@ -2723,7 +2747,7 @@ body.showcase.unisys {
                 float: none;
             }
         }
-    }
+        }
     }
 }
 
