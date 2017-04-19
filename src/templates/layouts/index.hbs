@@ -82,6 +82,77 @@
         });
     });
     </script>
+
+    <script>
+    $(function() {
+      $('#sec_1').on('inview', function(event, isInView, visiblePartX,
+        visiblePartY) {
+        if (isInView) {
+          //要素が見えたときに実行する処理
+          if (visiblePartX == 'both' && visiblePartY == 'top') {
+            //要素の全体が見えるようになったときに実行する処理
+            $("#navi li").removeClass("current");
+            $("#navi #nv01").addClass("current");
+          }
+        } else {
+          //要素が見えなくなったときに実行する処理
+        }
+      });
+      $('#sec_2').on('inview', function(event, isInView, visiblePartX,
+        visiblePartY) {
+        if (isInView) {
+          //要素が見えたときに実行する処理
+          if (visiblePartX == 'both' && visiblePartY == 'top') {
+            //要素の全体が見えるようになったときに実行する処理
+            $("#navi li").removeClass("current");
+            $("#navi #nv02").addClass("current");
+          }
+        } else {
+          //要素が見えなくなったときに実行する処理
+        }
+      });
+      $('#sec_3').on('inview', function(event, isInView, visiblePartX,
+        visiblePartY) {
+        if (isInView) {
+          //要素が見えたときに実行する処理
+          if (visiblePartX == 'both' && visiblePartY == 'top') {
+            //要素の全体が見えるようになったときに実行する処理
+            $("#navi li").removeClass("current");
+            $("#navi #nv03").addClass("current");
+          }
+        } else {
+          //要素が見えなくなったときに実行する処理
+        }
+      });
+      $('#sec_4').on('inview', function(event, isInView, visiblePartX,
+        visiblePartY) {
+        if (isInView) {
+          //要素が見えたときに実行する処理
+          if (visiblePartX == 'both' && visiblePartY == 'top') {
+            //要素の全体が見えるようになったときに実行する処理
+            $("#navi li").removeClass("current");
+            $("#navi #nv04").addClass("current");
+          }
+        } else {
+          //要素が見えなくなったときに実行する処理
+        }
+      });
+      $('#sec_5').on('inview', function(event, isInView, visiblePartX,
+        visiblePartY) {
+        if (isInView) {
+          //要素が見えたときに実行する処理
+          if (visiblePartX == 'both' && visiblePartY == 'top') {
+            //要素の全体が見えるようになったときに実行する処理
+            $("#navi li").removeClass("current");
+            $("#navi #nv05").addClass("current");
+          }
+        } else {
+          //要素が見えなくなったときに実行する処理
+        }
+      });
+    });
+    </script>
+
     <script>
 
         window.MONACA_API_URL = "{{site.monaca_api}}";
