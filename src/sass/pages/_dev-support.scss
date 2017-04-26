@@ -1,5 +1,12 @@
 body.devsupport {
-
+  .feed-img {
+      transition: 0.6s linear;
+      opacity: 0;
+  }
+  .feedin {
+      transition: 0.6s linear;
+      opacity: 1.0;
+  }
   .keyvisual {
     background: url(../img/devsupport/keyvisual.png) no-repeat center bottom, url(../img/devsupport/keyvisual_bg.png) repeat-x left bottom;
     padding-bottom: 0px;
@@ -55,7 +62,7 @@ body.devsupport {
       }
     }
   }
-  
+
   section.support {
     border-bottom: none;
   }
@@ -68,7 +75,7 @@ body.devsupport {
       padding-right: 0;
       h1 {
         padding-left: 5%;
-        padding-right: 5%;      
+        padding-right: 5%;
       }
     }
     table {

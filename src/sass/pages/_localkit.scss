@@ -1,4 +1,12 @@
 body.localkit {
+    .feed-img {
+        transition: 0.6s linear;
+        opacity: 0;
+        }
+        .feedin {
+            transition: 0.6s linear;
+            opacity: 1.0;
+        }
     .keyvisual {
         background: url(../img/localkit/keyvisual.jpg) no-repeat center bottom, url(../img/localkit/keyvisual_bg.png) repeat-x left bottom;
         color: #000;
@@ -36,7 +44,7 @@ body.localkit {
             @media screen and (max-width: $break) {
                 text-align: center;
                 margin-bottom: 20px;
-                
+
             }
             @media screen and (max-width: $break-xs) {
                 text-align: center;
@@ -144,7 +152,7 @@ body.localkit {
             @media screen and (max-width: $break-xs) {
                 padding: 50px 3% 30px;
                 font-size: 16px;
-            }              
+            }
             .btn {
                 padding: 12px 40px 0;
                 min-width: 210px;
