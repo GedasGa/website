@@ -119,6 +119,18 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/all.js"></script>
+    <script>
+    $(function() {
+        $('.feed-img').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+            if(isInView){
+                $(this).stop().addClass('feedin');
+            }
+            else{
+                $(this).stop().removeClass('feedin');
+            }
+        });
+    });
+    </script>
 
     <script src="https://use.typekit.net/tky7gag.js"></script>
     <script>
