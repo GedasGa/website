@@ -306,7 +306,8 @@ body.events #news > .container.news-updates .events-entries > .events-entry > dl
 }
 
 html body.home {
-  .box-full {
+  @media screen and (max-width: $break) {
+    .box-full {
       .events-entries {
         .events-entry {
           position: relative;
@@ -336,16 +337,13 @@ html body.home {
         }
       }
       .panel-grid {
-          @media screen and (max-width: $break) {
-              margin-left: 0;
-              margin-right: 0;
-          }
+        margin-left: 0;
+        margin-right: 0;
       }
       .panel-grid-cell {
-          @media screen and (max-width: $break) {
-              min-width: auto;
-              padding: 0px 0% 45px 0%;
-          }
+        min-width: auto;
+        padding: 0px 0% 45px 0%;
       }
+    }
   }
 }
