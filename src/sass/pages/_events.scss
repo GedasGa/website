@@ -332,8 +332,8 @@ html body.home {
         width: 100%;
       }
       .headline-entries > .headline-entry > dl > dt {
-          padding: 13px 0 0 0;
-          float: none;
+        padding: 13px 0 0 0;
+        float: none;
       }
       .headline-entries > .headline-entry > dl {
         dd {
@@ -341,12 +341,26 @@ html body.home {
         }
       }
       .panel-grid {
+<<<<<<< HEAD
         margin-left: 0;
         margin-right: 0;
       }
       .panel-grid-cell {
         min-width: auto;
         padding: 0px 0% 45px 0%;
+=======
+        @media screen and (max-width: $break) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+      .panel-grid-cell {
+        @media screen and (max-width: $break) {
+          min-width: auto;
+          padding: 0px 0% 45px 0%;
+          width: 100%;
+        }
+>>>>>>> d5609407d522eb410a9e328f21556d04485d0b95
       }
     }
   }
